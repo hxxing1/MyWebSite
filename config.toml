@@ -1,0 +1,44 @@
+baseURL = "https://your-domain.com"
+languageCode = "zh-cn"
+title = "BMS 硬件产品中心"
+theme = ""
+
+[params]
+  description = "专业 BMS 电池管理系统硬件产品展示"
+  author = "Your Name"
+  logo = "/images/logo.png"
+
+[menu]
+  [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "产品中心"
+    url = "/products/"
+    weight = 2
+  [[menu.main]]
+    name = "下载中心"
+    url = "/downloads/"
+    weight = 3
+  [[menu.main]]
+    name = "关于我们"
+    url = "/about/"
+    weight = 4
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4

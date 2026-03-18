@@ -1,0 +1,46 @@
+{{ define "main" }}
+<section class="page-header">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <p class="page-description">下载最新的 BMS 上位机软件和相关文档</p>
+    </div>
+</section>
+
+<section class="downloads-section">
+    <div class="container">
+        <div class="downloads-grid">
+            {{ range .Site.Data.downloads.software }}
+            <div class="download-card">
+                <div class="download-icon">
+                    {{ if eq .platform "Windows" }}🪟
+                    {{ else if eq .platform "macOS" }}🍎
+                    {{ else if eq .platform "Linux" }}🐧
+                    {{ else }}📦
+                    {{ end }}
+                </div>
+                <div class="download-info">
+                    <h3>{{ .name }}</h3>
+                    <p class="download-description">{{ .description }}</p>
+                    <div class="download-meta">
+                        <span class="version">版本：{{ .version }}</span>
+                        <span class="date">发布日期：{{ .date }}</span>
+                        <span class="size">大小：{{ .size }}</span>
+                        <span class="platform">平台：{{ .platform }}</span>
+                    </div>
+                    <a href="{{ .file }}" class="btn btn-primary download-btn" download>
+                        下载 {{ .platform }} 版本
+                    </a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+
+        <div class="release-notes">
+            <h2>更新日志</h2>
+            <div class="notes-content">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,40 @@
+{{ define "main" }}
+<section class="page-header">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-description">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<section class="products-section">
+    <div class="container">
+        <div class="products-grid">
+            {{ range .Pages }}
+            <article class="product-card">
+                {{ with .Params.images }}
+                <div class="product-image">
+                    <a href="{{ $.Permalink }}">
+                        <img src="{{ index . 0 }}" alt="{{ $.Title }}">
+                    </a>
+                </div>
+                {{ end }}
+                <div class="product-info">
+                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p class="product-description">{{ .Description }}</p>
+                    {{ with .Params.specs }}
+                    <ul class="product-specs-preview">
+                        {{ range first 3 . }}
+                        <li>{{ .name }}: {{ .value }}</li>
+                        {{ end }}
+                    </ul>
+                    {{ end }}
+                    <a href="{{ .Permalink }}" class="btn btn-outline">查看详情</a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

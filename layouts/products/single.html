@@ -1,0 +1,79 @@
+{{ define "main" }}
+<article class="product-detail">
+    <section class="page-header">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="/">首页</a> &gt;
+                <a href="/products/">产品中心</a> &gt;
+                <span>{{ .Title }}</span>
+            </nav>
+            <h1>{{ .Title }}</h1>
+            <p class="product-description">{{ .Description }}</p>
+        </div>
+    </section>
+
+    <section class="product-content">
+        <div class="container">
+            <div class="product-gallery">
+                {{ with .Params.images }}
+                <div class="main-image">
+                    <img src="{{ index . 0 }}" alt="{{ $.Title }}" id="main-product-image">
+                </div>
+                {{ if gt (len .) 1 }}
+                <div class="thumbnail-list">
+                    {{ range $index, $img := . }}
+                    <button class="thumbnail{{ if eq $index 0 }} active{{ end }}" data-src="{{ $img }}">
+                        <img src="{{ $img }}" alt="{{ $.Title }} - 图片 {{ add $index 1 }}">
+                    </button>
+                    {{ end }}
+                </div>
+                {{ end }}
+                {{ end }}
+            </div>
+
+            <div class="product-info-detail">
+                {{ with .Params.specs }}
+                <div class="specs-section">
+                    <h2>产品规格</h2>
+                    <table class="specs-table">
+                        <tbody>
+                            {{ range . }}
+                            <tr>
+                                <th>{{ .name }}</th>
+                                <td>{{ .value }}</td>
+                            </tr>
+                            {{ end }}
+                        </tbody>
+                    </table>
+                </div>
+                {{ end }}
+
+                {{ with .Params.features }}
+                <div class="features-section">
+                    <h2>产品特点</h2>
+                    <ul class="features-list">
+                        {{ range . }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+
+                <div class="download-section">
+                    <h2>相关下载</h2>
+                    <a href="/downloads/" class="btn btn-primary">下载上位机软件</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-description-full">
+        <div class="container">
+            <h2>详细介绍</h2>
+            <div class="content">
+                {{ .Content }}
+            </div>
+        </div>
+    </section>
+</article>
+{{ end }}

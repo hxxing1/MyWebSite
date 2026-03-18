@@ -1,0 +1,14 @@
+<header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <a href="/" class="logo">
+                {{ with .Site.Params.logo }}
+                <img src="{{ . }}" alt="{{ $.Site.Title }}">
+                {{ else }}
+                <span class="logo-text">{{ $.Site.Title }}</span>
+                {{ end }}
+            </a>
+            {{ partial "nav.html" . }}
+        </div>
+    </div>
+</header>
