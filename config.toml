@@ -27,8 +27,8 @@ title = "BMS 硬件产品中心"
     weight = 4
 
 [outputs]
-  home = ["HTML", "RSS"]
-  section = ["HTML", "RSS"]
+  home = ["HTML"]
+  section = ["HTML"]
 
 [sitemap]
   changefreq = "weekly"
