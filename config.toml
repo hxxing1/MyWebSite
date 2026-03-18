@@ -1,7 +1,6 @@
 baseURL = "https://your-domain.com"
 languageCode = "zh-cn"
 title = "BMS 硬件产品中心"
-theme = ""
 
 [params]
   description = "专业 BMS 电池管理系统硬件产品展示"
