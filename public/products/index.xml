@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>产品中心 on BMS 硬件产品中心</title>
-    <link>http://localhost:1313/products/</link>
+    <link>//localhost:1313/products/</link>
     <description>Recent content in 产品中心 on BMS 硬件产品中心</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <author>Your Name</author>
-    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/products/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>产品名称（例如：BMS-300A 大功率电池管理系统）</title>
-      <link>http://localhost:1313/products/%E4%BA%A7%E5%93%81%E6%A8%A1%E6%9D%BF/</link>
+      <link>//localhost:1313/products/%E4%BA%A7%E5%93%81%E6%A8%A1%E6%9D%BF/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/%E4%BA%A7%E5%93%81%E6%A8%A1%E6%9D%BF/</guid>
+      <guid>//localhost:1313/products/%E4%BA%A7%E5%93%81%E6%A8%A1%E6%9D%BF/</guid>
       <description>&lt;h2 id=&#34;产品概述&#34;&gt;产品概述&lt;/h2&gt;
 &lt;p&gt;在这里写产品的详细介绍，支持 &lt;strong&gt;Markdown 格式&lt;/strong&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;应用场景&#34;&gt;应用场景&lt;/h2&gt;
@@ -31,9 +31,9 @@
     
     <item>
       <title>BMS-200A 大功率电池管理系统</title>
-      <link>http://localhost:1313/products/bms-200a/</link>
+      <link>//localhost:1313/products/bms-200a/</link>
       <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/bms-200a/</guid>
+      <guid>//localhost:1313/products/bms-200a/</guid>
       <description>&lt;h2 id=&#34;产品概述&#34;&gt;产品概述&lt;/h2&gt;
 &lt;p&gt;BMS-200A 是面向大功率应用场景的专业级电池管理系统。采用工业级设计标准，能够在极端环境下稳定运行，适用于电动汽车、大型储能电站等高要求应用。&lt;/p&gt;
 &lt;h2 id=&#34;应用场景&#34;&gt;应用场景&lt;/h2&gt;
@@ -55,9 +55,9 @@
     
     <item>
       <title>BMS-100A 智能电池管理系统</title>
-      <link>http://localhost:1313/products/bms-100a/</link>
+      <link>//localhost:1313/products/bms-100a/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/bms-100a/</guid>
+      <guid>//localhost:1313/products/bms-100a/</guid>
       <description>&lt;h2 id=&#34;产品概述&#34;&gt;产品概述&lt;/h2&gt;
 &lt;p&gt;BMS-100A 是我们推出的一款高性能电池管理系统，专为需要高电流输出的应用场景设计。该产品采用先进的电池管理算法，能够精确监测和控制电池状态，确保电池组的安全运行。&lt;/p&gt;
 &lt;h2 id=&#34;应用场景&#34;&gt;应用场景&lt;/h2&gt;

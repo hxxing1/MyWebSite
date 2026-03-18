@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BMS 硬件产品中心</title>
-    <link>http://localhost:1313/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on BMS 硬件产品中心</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <author>Your Name</author>
-    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>产品中心</title>
-      <link>http://localhost:1313/products/</link>
+      <link>//localhost:1313/products/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/</guid>
+      <guid>//localhost:1313/products/</guid>
       <description></description>
     </item>
     
     <item>
       <title>下载中心</title>
-      <link>http://localhost:1313/downloads/</link>
+      <link>//localhost:1313/downloads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/downloads/</guid>
+      <guid>//localhost:1313/downloads/</guid>
       <description>&lt;h2 id=&#34;更新日志&#34;&gt;更新日志&lt;/h2&gt;
 &lt;h3 id=&#34;v100-2025-01-15&#34;&gt;v1.0.0 (2025-01-15)&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;新功能&lt;/strong&gt;&lt;/p&gt;
@@ -52,9 +52,9 @@
     
     <item>
       <title>关于我们</title>
-      <link>http://localhost:1313/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>//localhost:1313/about/</guid>
       <description>&lt;h2 id=&#34;公司简介&#34;&gt;公司简介&lt;/h2&gt;
 &lt;p&gt;我们是一家专注于电池管理系统研发的高科技团队，拥有多年的行业经验和技术积累。致力于为客户提供安全、可靠、高性能的 BMS 解决方案。&lt;/p&gt;
 &lt;h2 id=&#34;核心价值&#34;&gt;核心价值&lt;/h2&gt;
