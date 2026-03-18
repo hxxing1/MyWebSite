@@ -1,22 +1,41 @@
+# ============================================================
+# 下载中心配置文件
+# ============================================================
+# 
+# 添加新软件步骤：
+# 1. 将软件文件放入 static/downloads/ 目录
+# 2. 在下方 software 列表中添加新条目
+# 3. 保存文件，Hugo 会自动更新网站
+#
+# 字段说明：
+# - name: 软件名称
+# - version: 版本号
+# - date: 发布日期
+# - size: 文件大小
+# - platform: 平台类型（Windows/macOS/Linux）
+# - file: 下载文件路径（以 /downloads/ 开头）
+# - description: 软件功能描述
+# ============================================================
+
 software:
+  # ----------------------------------------------------------
+  # BMS 上位机工具 - Windows 版本
+  # ----------------------------------------------------------
   - name: "BMS 上位机工具"
     version: "v1.0.0"
     date: "2024-01-15"
-    size: "15.2 MB"
+    size: "1.01 MB"
     platform: "Windows"
     file: "/downloads/BMS-Tool-v1.0.0.exe"
     description: "BMS 参数配置与监控工具，支持实时数据监测、参数配置、固件升级等功能"
-  - name: "BMS 上位机工具"
-    version: "v1.0.0"
-    date: "2024-01-15"
-    size: "18.5 MB"
-    platform: "macOS"
-    file: "/downloads/BMS-Tool-v1.0.0.dmg"
-    description: "BMS 参数配置与监控工具，支持实时数据监测、参数配置、固件升级等功能"
-  - name: "BMS 配置助手"
-    version: "v0.9.5"
-    date: "2023-12-01"
-    size: "8.3 MB"
-    platform: "Windows"
-    file: "/downloads/BMS-Config-Assistant-v0.9.5.exe"
-    description: "轻量级配置工具，快速设置 BMS 基本参数"
+
+  # ----------------------------------------------------------
+  # 添加新软件示例（复制此模板并修改）
+  # ----------------------------------------------------------
+  # - name: "新软件名称"
+  #   version: "v1.0.0"
+  #   date: "2024-02-20"
+  #   size: "20.0 MB"
+  #   platform: "Windows"
+  #   file: "/downloads/新软件文件名.exe"
+  #   description: "软件功能描述"

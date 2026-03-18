@@ -6,6 +6,7 @@ title = "BMS 硬件产品中心"
   description = "专业 BMS 电池管理系统硬件产品展示"
   author = "Your Name"
   logo = "/images/logo.png"
+  wechatMiniProgramQR = "/images/wechat-miniprogram-qr.jpg"
 
 [menu]
   [[menu.main]]
