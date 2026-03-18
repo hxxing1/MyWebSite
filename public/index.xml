@@ -4,30 +4,82 @@
     <title>BMS 硬件产品中心</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on BMS 硬件产品中心</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <author>Your Name</author>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>产品名称（例如：BMS-300A 大功率电池管理系统）</title>
-      <link>http://localhost:1313/products/%E4%BA%A7%E5%93%81%E6%A8%A1%E6%9D%BF/</link>
+      <title>产品中心</title>
+      <link>http://localhost:1313/products/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/%E4%BA%A7%E5%93%81%E6%A8%A1%E6%9D%BF/</guid>
-      <description>&lt;h2 id=&#34;产品概述&#34;&gt;产品概述&lt;/h2&gt;&#xA;&lt;p&gt;在这里写产品的详细介绍，支持 &lt;strong&gt;Markdown 格式&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;h2 id=&#34;应用场景&#34;&gt;应用场景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;应用场景1&lt;/li&gt;&#xA;&lt;li&gt;应用场景2&lt;/li&gt;&#xA;&lt;li&gt;应用场景3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;技术优势&#34;&gt;技术优势&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;技术优势一&lt;/li&gt;&#xA;&lt;li&gt;技术优势二&lt;/li&gt;&#xA;&lt;li&gt;技术优势三&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+      <guid>http://localhost:1313/products/</guid>
+      <description></description>
     </item>
+    
     <item>
-      <title>BMS-200A 大功率电池管理系统</title>
-      <link>http://localhost:1313/products/bms-200a/</link>
-      <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/bms-200a/</guid>
-      <description>&lt;h2 id=&#34;产品概述&#34;&gt;产品概述&lt;/h2&gt;&#xA;&lt;p&gt;BMS-200A 是面向大功率应用场景的专业级电池管理系统。采用工业级设计标准，能够在极端环境下稳定运行，适用于电动汽车、大型储能电站等高要求应用。&lt;/p&gt;&#xA;&lt;h2 id=&#34;应用场景&#34;&gt;应用场景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;电动汽车&lt;/li&gt;&#xA;&lt;li&gt;大型储能电站&lt;/li&gt;&#xA;&lt;li&gt;工业设备&lt;/li&gt;&#xA;&lt;li&gt;轨道交通&lt;/li&gt;&#xA;&lt;li&gt;船舶动力系统&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;技术优势&#34;&gt;技术优势&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;工业级设计&lt;/strong&gt;：通过严格的 EMC 测试，符合工业应用标准&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;车规级品质&lt;/strong&gt;：满足汽车电子可靠性要求&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;智能诊断&lt;/strong&gt;：内置故障诊断算法，提前预警潜在问题&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;数据追溯&lt;/strong&gt;：支持历史数据导出，便于问题分析&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+      <title>下载中心</title>
+      <link>http://localhost:1313/downloads/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/downloads/</guid>
+      <description>&lt;h2 id=&#34;更新日志&#34;&gt;更新日志&lt;/h2&gt;
+&lt;h3 id=&#34;v100-2025-01-15&#34;&gt;v1.0.0 (2025-01-15)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;新功能&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;全新的用户界面设计&lt;/li&gt;
+&lt;li&gt;支持实时数据监测&lt;/li&gt;
+&lt;li&gt;新增参数配置&lt;/li&gt;
+&lt;li&gt;支持固件在线升级&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;优化&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;提升数据刷新频率&lt;/li&gt;
+&lt;li&gt;优化内存占用&lt;/li&gt;
+&lt;li&gt;改善连接稳定性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;v095-2023-12-01&#34;&gt;v0.9.5 (2023-12-01)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;新功能&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基础参数配置功能&lt;/li&gt;
+&lt;li&gt;实时电压电流显示&lt;/li&gt;
+&lt;li&gt;简单的数据记录功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;系统要求&#34;&gt;系统要求&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Windows&lt;/strong&gt;: Windows 10 或更高版本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;硬件&lt;/strong&gt;: 至少 4GB 内存，100MB 可用磁盘空间&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
+    
     <item>
-      <title>BMS-100A 智能电池管理系统</title>
-      <link>http://localhost:1313/products/bms-100a/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/bms-100a/</guid>
-      <description>&lt;h2 id=&#34;产品概述&#34;&gt;产品概述&lt;/h2&gt;&#xA;&lt;p&gt;BMS-100A 是我们推出的一款高性能电池管理系统，专为需要高电流输出的应用场景设计。该产品采用先进的电池管理算法，能够精确监测和控制电池状态，确保电池组的安全运行。&lt;/p&gt;&#xA;&lt;h2 id=&#34;应用场景&#34;&gt;应用场景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;电动工具&lt;/li&gt;&#xA;&lt;li&gt;储能系统&lt;/li&gt;&#xA;&lt;li&gt;电动自行车&lt;/li&gt;&#xA;&lt;li&gt;AGV 小车&lt;/li&gt;&#xA;&lt;li&gt;备用电源&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;技术优势&#34;&gt;技术优势&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;高精度采样&lt;/strong&gt;：采用 16 位 ADC，实现毫伏级电压检测精度&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;快速响应&lt;/strong&gt;：过流保护响应时间小于 100μs&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;智能均衡&lt;/strong&gt;：主动均衡技术，均衡效率高达 90%&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;远程监控&lt;/strong&gt;：支持上位机软件实时监控和参数配置&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+      <title>关于我们</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;公司简介&#34;&gt;公司简介&lt;/h2&gt;
+&lt;p&gt;我们是一家专注于电池管理系统研发的高科技团队，拥有多年的行业经验和技术积累。致力于为客户提供安全、可靠、高性能的 BMS 解决方案。&lt;/p&gt;
+&lt;h2 id=&#34;核心价值&#34;&gt;核心价值&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;品质至上&lt;/strong&gt;：严格的质量控制体系，确保产品可靠性&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术创新&lt;/strong&gt;：持续投入研发，保持技术领先&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;客户导向&lt;/strong&gt;：以客户需求为中心，提供定制化解决方案&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;专业服务&lt;/strong&gt;：全程技术支持，快速响应客户需求&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;联系方式&#34;&gt;联系方式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;商务合作&lt;/strong&gt;：business@example.com&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术支持&lt;/strong&gt;：support@example.com&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;联系电话&lt;/strong&gt;：+86 xxx-xxxx-xxxx&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;公司地址&lt;/strong&gt;：中国 · 深圳&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;技术支持&#34;&gt;技术支持&lt;/h2&gt;
+&lt;p&gt;我们提供全方位的技术支持服务：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;产品选型指导&lt;/li&gt;
+&lt;li&gt;技术方案咨询&lt;/li&gt;
+&lt;li&gt;上位机软件使用培训&lt;/li&gt;
+&lt;li&gt;售后问题处理&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
+    
   </channel>
 </rss>
