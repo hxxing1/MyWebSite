@@ -1,6 +1,6 @@
 ---
 title: "BMS-BLE200A 大功率电池管理系统"
-date: 2024-01-12
+date: 2025-09-12
 draft: false
 description: "大功率 200A 电池管理系统，适用于铅改锂、户用储能系统"
 images:

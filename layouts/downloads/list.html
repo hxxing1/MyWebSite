@@ -94,16 +94,6 @@
                     </div>
                     <p class="qrcode-tip">{{ .Site.Params.downloads.qrcodeTip }}</p>
                 </div>
-
-                <div class="contact-card">
-                    <h3>{{ .Site.Params.downloads.supportTitle }}</h3>
-                    <p>{{ .Site.Params.downloads.supportDesc }}</p>
-                    <ul>
-                        {{ with .Site.Params.contact.supportEmail }}<li>📧 {{ . }}</li>{{ end }}
-                        {{ with .Site.Params.contact.wechat }}<li>📱 微信：{{ . }}</li>{{ end }}
-                        {{ with .Site.Params.contact.phone }}<li>📞 {{ . }}</li>{{ end }}
-                    </ul>
-                </div>
             </aside>
         </div>
     </div>

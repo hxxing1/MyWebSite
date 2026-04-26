@@ -27,6 +27,17 @@
             {{ end }}
         </div>
         {{ end }}
+
+        <div class="about-block">
+            <h2>联系方式</h2>
+            <ul>
+                {{ with .Site.Params.contact.businessEmail }}<li>**商务合作**：{{ . }}</li>{{ end }}
+                {{ with .Site.Params.contact.supportEmail }}<li>**技术支持**：{{ . }}</li>{{ end }}
+                {{ with .Site.Params.contact.phone }}<li>**联系电话**：{{ . }}</li>{{ end }}
+                {{ with .Site.Params.contact.wechat }}<li>**微信**：{{ . }}</li>{{ end }}
+                {{ with .Site.Params.contact.address }}<li>**公司地址**：{{ . }}</li>{{ end }}
+            </ul>
+        </div>
     </div>
 </section>
 {{ end }}

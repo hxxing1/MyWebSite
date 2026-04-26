@@ -6,25 +6,33 @@
 
 baseURL = "https://bmsprotuct.pages.dev/"
 languageCode = "zh-cn"
-title = "BMS 硬件产品中心"
+title = "擎芯科技有限公司"
 
 # ============================================================
 # 网站基本信息
 # ============================================================
 [params]
-  description = "专业 BMS 电池管理系统硬件产品展示"
+  description = "专业 BMS 电池管理系统开发"
   author = "hxx"
   logo = "/images/logo.ico"
   wechatMiniProgramQR = "/images/wechat-miniprogram-qr.jpg"
 
   # ----------------------------------------------------------
-  # 联系方式（Footer 和下载页侧边栏共用）
+  # 版权信息
+  # ----------------------------------------------------------
+  [params.copyright]
+    text = "© 2026 qinxing. All rights reserved."
+
+  # ----------------------------------------------------------
+  # 联系方式（Footer、下载页侧边栏、关于我们共用）
   # ----------------------------------------------------------
   [params.contact]
-    email = "contact@example.com"
-    supportEmail = "support@example.com"
-    phone = "+86 xxx-xxxx-xxxx"
-    wechat = "BMS_Support"
+    email = "1336972615@qq.com"
+    supportEmail = "1336972615@qq.com"
+    phone = "+86 18438699099"
+    wechat = ""
+    businessEmail = "1336972615@qq.com"
+    address = "中国 · 深圳"
 
   # ----------------------------------------------------------
   # 首页 Hero 区域
@@ -62,7 +70,7 @@ title = "BMS 硬件产品中心"
   # ----------------------------------------------------------
   [params.productsPreview]
     title = "热门产品"
-    showCount = 3
+    showCount = 2
     viewAllText = "查看全部产品"
     viewAllUrl = "/products/"
 
@@ -146,7 +154,7 @@ title = "BMS 硬件产品中心"
 
     [[params.about.sections]]
       title = "公司简介"
-      content = "我们是一家专注于电池管理系统研发的高科技团队，拥有多年的行业经验和技术积累。致力于为客户提供安全、可靠、高性能的 BMS 解决方案。"
+      content = "我们是一家专注于电池管理系统研发的公司，拥有多年的行业经验和技术积累。致力于为客户提供安全、可靠、高性能的 BMS 解决方案。"
 
     [[params.about.sections]]
       title = "核心价值"
@@ -155,15 +163,6 @@ title = "BMS 硬件产品中心"
         "**技术创新**：持续投入研发，保持技术领先",
         "**客户导向**：以客户需求为中心，提供定制化解决方案",
         "**专业服务**：全程技术支持，快速响应客户需求"
-      ]
-
-    [[params.about.sections]]
-      title = "联系方式"
-      items = [
-        "**商务合作**：business@example.com",
-        "**技术支持**：support@example.com",
-        "**联系电话**：+86 xxx-xxxx-xxxx",
-        "**公司地址**：中国 · 深圳"
       ]
 
     [[params.about.sections]]
