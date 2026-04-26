@@ -2,83 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BMS 硬件产品中心</title>
-    <link>//localhost:1313/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on BMS 硬件产品中心</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <author>Your Name</author>
-    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <author>hxx</author>
+    <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>产品中心</title>
-      <link>//localhost:1313/products/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/products/</guid>
+      <link>http://localhost:1313/products/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/products/</guid>
       <description></description>
     </item>
     
     <item>
       <title>下载中心</title>
-      <link>//localhost:1313/downloads/</link>
+      <link>http://localhost:1313/downloads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/downloads/</guid>
-      <description>&lt;h2 id=&#34;更新日志&#34;&gt;更新日志&lt;/h2&gt;
-&lt;h3 id=&#34;v100-2025-01-15&#34;&gt;v1.0.0 (2025-01-15)&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;新功能&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;全新的用户界面设计&lt;/li&gt;
-&lt;li&gt;支持实时数据监测&lt;/li&gt;
-&lt;li&gt;新增参数配置&lt;/li&gt;
-&lt;li&gt;支持固件在线升级&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;优化&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;提升数据刷新频率&lt;/li&gt;
-&lt;li&gt;优化内存占用&lt;/li&gt;
-&lt;li&gt;改善连接稳定性&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;v095-2023-12-01&#34;&gt;v0.9.5 (2023-12-01)&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;新功能&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;基础参数配置功能&lt;/li&gt;
-&lt;li&gt;实时电压电流显示&lt;/li&gt;
-&lt;li&gt;简单的数据记录功能&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;系统要求&#34;&gt;系统要求&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Windows&lt;/strong&gt;: Windows 10 或更高版本&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;硬件&lt;/strong&gt;: 至少 4GB 内存，100MB 可用磁盘空间&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <guid>http://localhost:1313/downloads/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>关于我们</title>
-      <link>//localhost:1313/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/about/</guid>
-      <description>&lt;h2 id=&#34;公司简介&#34;&gt;公司简介&lt;/h2&gt;
-&lt;p&gt;我们是一家专注于电池管理系统研发的高科技团队，拥有多年的行业经验和技术积累。致力于为客户提供安全、可靠、高性能的 BMS 解决方案。&lt;/p&gt;
-&lt;h2 id=&#34;核心价值&#34;&gt;核心价值&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;品质至上&lt;/strong&gt;：严格的质量控制体系，确保产品可靠性&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;技术创新&lt;/strong&gt;：持续投入研发，保持技术领先&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;客户导向&lt;/strong&gt;：以客户需求为中心，提供定制化解决方案&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;专业服务&lt;/strong&gt;：全程技术支持，快速响应客户需求&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;联系方式&#34;&gt;联系方式&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;商务合作&lt;/strong&gt;：business@example.com&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;技术支持&lt;/strong&gt;：support@example.com&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;联系电话&lt;/strong&gt;：+86 xxx-xxxx-xxxx&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;公司地址&lt;/strong&gt;：中国 · 深圳&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;技术支持&#34;&gt;技术支持&lt;/h2&gt;
-&lt;p&gt;我们提供全方位的技术支持服务：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;产品选型指导&lt;/li&gt;
-&lt;li&gt;技术方案咨询&lt;/li&gt;
-&lt;li&gt;上位机软件使用培训&lt;/li&gt;
-&lt;li&gt;售后问题处理&lt;/li&gt;
-&lt;/ol&gt;</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
     </item>
     
   </channel>

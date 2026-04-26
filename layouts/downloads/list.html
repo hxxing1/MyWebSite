@@ -2,7 +2,7 @@
 <section class="page-header">
     <div class="container">
         <h1>{{ .Title }}</h1>
-        <p class="page-description">下载最新的 BMS 上位机软件和相关文档</p>
+        <p class="page-description">{{ .Site.Params.downloads.pageTitle }}</p>
     </div>
 </section>
 
@@ -10,9 +10,9 @@
     <div class="container">
         <div class="downloads-wrapper">
             <div class="downloads-main">
-                <h2>软件下载</h2>
+                <h2>{{ .Site.Params.downloads.sectionTitle }}</h2>
                 <div class="downloads-grid">
-                    {{ range .Site.Data.downloads.software }}
+                    {{ range .Site.Params.downloads.software }}
                     <div class="download-card">
                         <div class="download-icon">
                             {{ if eq .platform "Windows" }}🪟
@@ -38,18 +38,50 @@
                     {{ end }}
                 </div>
 
+                {{ with .Site.Params.downloads.changelog }}
                 <div class="release-notes">
-                    <h2>更新日志</h2>
-                    <div class="notes-content">
-                        {{ .Content }}
-                    </div>
+                    <h2>{{ .title }}</h2>
+                    {{ range .versions }}
+                    <h3>{{ .version }} ({{ .date }})</h3>
+                    {{ with .featuresTitle }}
+                    <p><strong>{{ . }}</strong></p>
+                    {{ end }}
+                    {{ if .features }}
+                    <ul>
+                        {{ range .features }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                    {{ end }}
+                    {{ with .optimizationsTitle }}
+                    <p><strong>{{ . }}</strong></p>
+                    {{ end }}
+                    {{ if .optimizations }}
+                    <ul>
+                        {{ range .optimizations }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                    {{ end }}
+                    {{ end }}
                 </div>
+                {{ end }}
+
+                {{ with .Site.Params.downloads.systemRequirements }}
+                <div class="system-requirements">
+                    <h2>{{ .title }}</h2>
+                    <ul>
+                        <li><strong>Windows</strong>: {{ .windows }}</li>
+                        <li><strong>硬件</strong>: {{ .hardware }}</li>
+                    </ul>
+                </div>
+                {{ end }}
             </div>
 
             <aside class="downloads-sidebar">
                 <div class="qrcode-card">
-                    <h3>微信小程序</h3>
-                    <p class="qrcode-desc">扫码使用微信小程序</p>
+                    <h3>{{ .Site.Params.downloads.qrcodeTitle }}</h3>
+                    <p class="qrcode-desc">{{ .Site.Params.downloads.qrcodeDesc }}</p>
                     <div class="qrcode-image">
                         {{ with .Site.Params.wechatMiniProgramQR }}
                         <img src="{{ . }}" alt="微信小程序二维码">
@@ -60,15 +92,16 @@
                         </div>
                         {{ end }}
                     </div>
-                    <p class="qrcode-tip">扫描上方二维码，体验微信小程序版本</p>
+                    <p class="qrcode-tip">{{ .Site.Params.downloads.qrcodeTip }}</p>
                 </div>
 
                 <div class="contact-card">
-                    <h3>技术支持</h3>
-                    <p>如有问题，请联系：</p>
+                    <h3>{{ .Site.Params.downloads.supportTitle }}</h3>
+                    <p>{{ .Site.Params.downloads.supportDesc }}</p>
                     <ul>
-                        <li>📧 support@example.com</li>
-                        <li>📱 微信：BMS_Support</li>
+                        {{ with .Site.Params.contact.supportEmail }}<li>📧 {{ . }}</li>{{ end }}
+                        {{ with .Site.Params.contact.wechat }}<li>📱 微信：{{ . }}</li>{{ end }}
+                        {{ with .Site.Params.contact.phone }}<li>📞 {{ . }}</li>{{ end }}
                     </ul>
                 </div>
             </aside>

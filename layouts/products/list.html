@@ -11,21 +11,28 @@
 <section class="products-section">
     <div class="container">
         <div class="products-grid">
-            {{ range .Pages }}
+            {{ range where .Site.RegularPages "Section" "products" }}
+            {{ if not .Draft }}
             <article class="product-card">
-                {{ with .Params.images }}
+                {{ if .Params.images }}
                 <div class="product-image">
-                    <a href="{{ $.Permalink }}">
-                        <img src="{{ index . 0 }}" alt="{{ $.Title }}">
+                    <a href="{{ .Permalink }}">
+                        <img src="{{ index .Params.images 0 }}" alt="{{ .Title }}">
+                    </a>
+                </div>
+                {{ else }}
+                <div class="product-image">
+                    <a href="{{ .Permalink }}">
+                        <img src="/images/products/default.jpg" alt="{{ .Title }}">
                     </a>
                 </div>
                 {{ end }}
                 <div class="product-info">
                     <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                    <p class="product-description">{{ .Description }}</p>
-                    {{ with .Params.specs }}
+                    <p class="product-description">{{ .Params.description }}</p>
+                    {{ if .Params.specs }}
                     <ul class="product-specs-preview">
-                        {{ range first 3 . }}
+                        {{ range first 3 .Params.specs }}
                         <li>{{ .name }}: {{ .value }}</li>
                         {{ end }}
                     </ul>
@@ -33,6 +40,7 @@
                     <a href="{{ .Permalink }}" class="btn btn-outline">查看详情</a>
                 </div>
             </article>
+            {{ end }}
             {{ end }}
         </div>
     </div>

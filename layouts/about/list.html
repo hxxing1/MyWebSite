@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="page-header">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-description">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="container">
+        {{ range .Site.Params.about.sections }}
+        <div class="about-block">
+            <h2>{{ .title }}</h2>
+            {{ if .content }}
+            <div class="about-content">
+                {{ .content | markdownify }}
+            </div>
+            {{ end }}
+            {{ if .items }}
+            <ul>
+                {{ range .items }}
+                <li>{{ . | markdownify }}</li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

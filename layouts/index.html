@@ -2,11 +2,11 @@
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <h1 class="hero-title">专业 BMS 硬件解决方案</h1>
-            <p class="hero-subtitle">高品质电池管理系统，为您的产品提供安全可靠的能源管理</p>
+            <h1 class="hero-title">{{ .Site.Params.hero.title }}</h1>
+            <p class="hero-subtitle">{{ .Site.Params.hero.subtitle }}</p>
             <div class="hero-buttons">
-                <a href="/products/" class="btn btn-primary">查看产品</a>
-                <a href="/downloads/" class="btn btn-secondary">下载中心</a>
+                <a href="{{ .Site.Params.hero.primaryBtnUrl }}" class="btn btn-primary">{{ .Site.Params.hero.primaryBtnText }}</a>
+                <a href="{{ .Site.Params.hero.secondaryBtnUrl }}" class="btn btn-secondary">{{ .Site.Params.hero.secondaryBtnText }}</a>
             </div>
         </div>
     </div>
@@ -16,60 +16,56 @@
     <div class="container">
         <h2 class="section-title">为什么选择我们</h2>
         <div class="features-grid">
+            {{ range .Site.Params.features }}
             <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>高性能</h3>
-                <p>采用先进的电池管理算法，确保最佳性能表现</p>
+                <div class="feature-icon">{{ .icon }}</div>
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">🛡️</div>
-                <h3>安全可靠</h3>
-                <p>多重保护机制，全方位保障电池安全</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🔧</div>
-                <h3>易于集成</h3>
-                <p>完善的接口设计，方便快速集成到您的产品</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">📞</div>
-                <h3>技术支持</h3>
-                <p>专业团队提供全程技术支持服务</p>
-            </div>
+            {{ end }}
         </div>
     </div>
 </section>
 
 <section class="products-preview">
     <div class="container">
-        <h2 class="section-title">热门产品</h2>
+        <h2 class="section-title">{{ .Site.Params.productsPreview.title }}</h2>
         <div class="products-grid">
-            {{ range first 3 (where .Site.RegularPages "Section" "products") }}
+            {{ $products := where (where .Site.RegularPages "Section" "products") "Draft" false }}
+            {{ range first .Site.Params.productsPreview.showCount $products }}
             <div class="product-card">
-                {{ with .Params.images }}
+                {{ if .Params.images }}
                 <div class="product-image">
-                    <img src="{{ index . 0 }}" alt="{{ $.Title }}">
+                    <a href="{{ .Permalink }}">
+                        <img src="{{ index .Params.images 0 }}" alt="{{ .Title }}">
+                    </a>
+                </div>
+                {{ else }}
+                <div class="product-image">
+                    <a href="{{ .Permalink }}">
+                        <img src="/images/products/default.jpg" alt="{{ .Title }}">
+                    </a>
                 </div>
                 {{ end }}
                 <div class="product-info">
                     <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                    <p>{{ .Description }}</p>
+                    <p>{{ .Params.description }}</p>
                     <a href="{{ .Permalink }}" class="btn btn-outline">了解更多</a>
                 </div>
             </div>
             {{ end }}
         </div>
         <div class="section-action">
-            <a href="/products/" class="btn btn-primary">查看全部产品</a>
+            <a href="{{ .Site.Params.productsPreview.viewAllUrl }}" class="btn btn-primary">{{ .Site.Params.productsPreview.viewAllText }}</a>
         </div>
     </div>
 </section>
 
 <section class="cta">
     <div class="container">
-        <h2>需要技术支持？</h2>
-        <p>我们的专业团队随时为您提供帮助</p>
-        <a href="/about/" class="btn btn-light">联系我们</a>
+        <h2>{{ .Site.Params.cta.title }}</h2>
+        <p>{{ .Site.Params.cta.subtitle }}</p>
+        <a href="{{ .Site.Params.cta.btnUrl }}" class="btn btn-light">{{ .Site.Params.cta.btnText }}</a>
     </div>
 </section>
 {{ end }}

@@ -2,79 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>产品中心 on BMS 硬件产品中心</title>
-    <link>//localhost:1313/products/</link>
+    <link>http://localhost:1313/products/</link>
     <description>Recent content in 产品中心 on BMS 硬件产品中心</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <author>Your Name</author>
-    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/products/index.xml" rel="self" type="application/rss+xml" />
+    <author>hxx</author>
+    <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>产品名称（例如：BMS-300A 大功率电池管理系统）</title>
-      <link>//localhost:1313/products/%E4%BA%A7%E5%93%81%E6%A8%A1%E6%9D%BF/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/products/%E4%BA%A7%E5%93%81%E6%A8%A1%E6%9D%BF/</guid>
-      <description>&lt;h2 id=&#34;产品概述&#34;&gt;产品概述&lt;/h2&gt;
-&lt;p&gt;在这里写产品的详细介绍，支持 &lt;strong&gt;Markdown 格式&lt;/strong&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;应用场景&#34;&gt;应用场景&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;应用场景1&lt;/li&gt;
-&lt;li&gt;应用场景2&lt;/li&gt;
-&lt;li&gt;应用场景3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;技术优势&#34;&gt;技术优势&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;技术优势一&lt;/li&gt;
-&lt;li&gt;技术优势二&lt;/li&gt;
-&lt;li&gt;技术优势三&lt;/li&gt;
-&lt;/ol&gt;</description>
+      <title>PD100W 智能电池管理系统</title>
+      <link>http://localhost:1313/products/pd100w/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/products/pd100w/</guid>
+      <description>&lt;p&gt;BMS-PD100W 是我们推出的一款高性能电池管理系统，专为机器人关节供电的应用场景设计。该产品采用先进的电池管理算法，能够精确监测和控制电池状态，确保电池组的安全运行。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>BMS-200A 大功率电池管理系统</title>
-      <link>//localhost:1313/products/bms-200a/</link>
+      <title>4.3 LCD 显示管理设备</title>
+      <link>http://localhost:1313/products/4.3lcd/</link>
       <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/products/bms-200a/</guid>
-      <description>&lt;h2 id=&#34;产品概述&#34;&gt;产品概述&lt;/h2&gt;
-&lt;p&gt;BMS-200A 是面向大功率应用场景的专业级电池管理系统。采用工业级设计标准，能够在极端环境下稳定运行，适用于电动汽车、大型储能电站等高要求应用。&lt;/p&gt;
-&lt;h2 id=&#34;应用场景&#34;&gt;应用场景&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;电动汽车&lt;/li&gt;
-&lt;li&gt;大型储能电站&lt;/li&gt;
-&lt;li&gt;工业设备&lt;/li&gt;
-&lt;li&gt;轨道交通&lt;/li&gt;
-&lt;li&gt;船舶动力系统&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;技术优势&#34;&gt;技术优势&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;工业级设计&lt;/strong&gt;：通过严格的 EMC 测试，符合工业应用标准&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;车规级品质&lt;/strong&gt;：满足汽车电子可靠性要求&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;智能诊断&lt;/strong&gt;：内置故障诊断算法，提前预警潜在问题&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;数据追溯&lt;/strong&gt;：支持历史数据导出，便于问题分析&lt;/li&gt;
-&lt;/ol&gt;</description>
+      <guid>http://localhost:1313/products/4.3lcd/</guid>
+      <description>&lt;p&gt;LCD 显示管理设备 是采用 UART 通信控制，方便用户实时查看电池状态的本地管理设备。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>BMS-100A 智能电池管理系统</title>
-      <link>//localhost:1313/products/bms-100a/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/products/bms-100a/</guid>
-      <description>&lt;h2 id=&#34;产品概述&#34;&gt;产品概述&lt;/h2&gt;
-&lt;p&gt;BMS-100A 是我们推出的一款高性能电池管理系统，专为需要高电流输出的应用场景设计。该产品采用先进的电池管理算法，能够精确监测和控制电池状态，确保电池组的安全运行。&lt;/p&gt;
-&lt;h2 id=&#34;应用场景&#34;&gt;应用场景&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;电动工具&lt;/li&gt;
-&lt;li&gt;储能系统&lt;/li&gt;
-&lt;li&gt;电动自行车&lt;/li&gt;
-&lt;li&gt;AGV 小车&lt;/li&gt;
-&lt;li&gt;备用电源&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;技术优势&#34;&gt;技术优势&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;高精度采样&lt;/strong&gt;：采用 16 位 ADC，实现毫伏级电压检测精度&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;快速响应&lt;/strong&gt;：过流保护响应时间小于 100μs&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;智能均衡&lt;/strong&gt;：主动均衡技术，均衡效率高达 90%&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;远程监控&lt;/strong&gt;：支持上位机软件实时监控和参数配置&lt;/li&gt;
-&lt;/ol&gt;</description>
+      <title>BMS-BLE200A 大功率电池管理系统</title>
+      <link>http://localhost:1313/products/ble200a/</link>
+      <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/products/ble200a/</guid>
+      <description>&lt;p&gt;BMS-200A 是面向大功率应用场景的专业级电池管理系统。采用无线通信控制，方便用户实时查看电池状态，组串设计方便用户根据实际需求进行电池配置。&lt;/p&gt;</description>
     </item>
     
   </channel>

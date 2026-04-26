@@ -1,13 +1,178 @@
-baseURL = "/"
+# ============================================================
+# BMS 硬件产品中心 - 统一配置文件
+# ============================================================
+# 所有可配置内容集中在此文件管理，修改后推送到 GitHub 即可生效
+# ============================================================
+
+baseURL = "https://bmsprotuct.pages.dev/"
 languageCode = "zh-cn"
 title = "BMS 硬件产品中心"
 
+# ============================================================
+# 网站基本信息
+# ============================================================
 [params]
   description = "专业 BMS 电池管理系统硬件产品展示"
-  author = "Your Name"
-  logo = "/images/logo.png"
+  author = "hxx"
+  logo = "/images/logo.ico"
   wechatMiniProgramQR = "/images/wechat-miniprogram-qr.jpg"
 
+  # ----------------------------------------------------------
+  # 联系方式（Footer 和下载页侧边栏共用）
+  # ----------------------------------------------------------
+  [params.contact]
+    email = "contact@example.com"
+    supportEmail = "support@example.com"
+    phone = "+86 xxx-xxxx-xxxx"
+    wechat = "BMS_Support"
+
+  # ----------------------------------------------------------
+  # 首页 Hero 区域
+  # ----------------------------------------------------------
+  [params.hero]
+    title = "专业 BMS 硬件解决方案"
+    subtitle = "高品质电池管理系统，为您的产品提供安全可靠的能源管理"
+    primaryBtnText = "查看产品"
+    primaryBtnUrl = "/products/"
+    secondaryBtnText = "下载中心"
+    secondaryBtnUrl = "/downloads/"
+
+  # ----------------------------------------------------------
+  # 首页特性展示区域
+  # ----------------------------------------------------------
+  [[params.features]]
+    icon = "⚡"
+    title = "高性能"
+    description = "采用先进的电池管理算法，确保最佳性能表现"
+  [[params.features]]
+    icon = "🛡️"
+    title = "安全可靠"
+    description = "多重保护机制，全方位保障电池安全"
+  [[params.features]]
+    icon = "🔧"
+    title = "易于集成"
+    description = "完善的接口设计，方便快速集成到您的产品"
+  [[params.features]]
+    icon = "📞"
+    title = "技术支持"
+    description = "专业团队提供全程技术支持服务"
+
+  # ----------------------------------------------------------
+  # 首页热门产品区域
+  # ----------------------------------------------------------
+  [params.productsPreview]
+    title = "热门产品"
+    showCount = 3
+    viewAllText = "查看全部产品"
+    viewAllUrl = "/products/"
+
+  # ----------------------------------------------------------
+  # 首页 CTA 区域（底部号召行动）
+  # ----------------------------------------------------------
+  [params.cta]
+    title = "需要技术支持？"
+    subtitle = "我们的专业团队随时为您提供帮助"
+    btnText = "联系我们"
+    btnUrl = "/about/"
+
+  # ----------------------------------------------------------
+  # 下载页配置
+  # ----------------------------------------------------------
+  [params.downloads]
+    pageTitle = "下载最新的 BMS 上位机软件和相关文档"
+    sectionTitle = "软件下载"
+    qrcodeTitle = "微信小程序"
+    qrcodeDesc = "扫码使用微信小程序"
+    qrcodeTip = "扫描上方二维码，体验微信小程序版本"
+    supportTitle = "技术支持"
+    supportDesc = "如有问题，请联系："
+
+  # ----------------------------------------------------------
+  # 下载软件列表
+  # ----------------------------------------------------------
+  [[params.downloads.software]]
+    name = "BMS 上位机工具"
+    version = "v1.0.9"
+    date = "2026-01-15"
+    size = "1.01 MB"
+    platform = "Windows"
+    file = "/downloads/app_pc.exe"
+    description = "BMS 参数配置与监控工具，支持实时数据监测、参数配置、固件升级等功能"
+
+  # 添加新软件示例（取消注释并修改）
+  # [[params.downloads.software]]
+  #   name = "新软件名称"
+  #   version = "v1.0.0"
+  #   date = "2024-02-20"
+  #   size = "20.0 MB"
+  #   platform = "Windows"
+  #   file = "/downloads/新软件文件名.exe"
+  #   description = "软件功能描述"
+
+  # ----------------------------------------------------------
+  # 更新日志
+  # ----------------------------------------------------------
+  [params.downloads.changelog]
+    title = "更新日志"
+
+    [[params.downloads.changelog.versions]]
+      version = "v1.0.9"
+      date = "2026-01-15"
+      featuresTitle = "新功能"
+      features = ["全新的用户界面设计", "支持实时数据监测", "新增参数配置", "支持固件在线升级"]
+      optimizationsTitle = "优化"
+      optimizations = ["提升数据刷新频率", "优化内存占用", "改善连接稳定性"]
+
+    [[params.downloads.changelog.versions]]
+      version = "v0.9.5"
+      date = "2023-12-01"
+      featuresTitle = "新功能"
+      features = ["基础参数配置功能", "实时电压电流显示", "简单的数据记录功能"]
+
+  # ----------------------------------------------------------
+  # 系统要求
+  # ----------------------------------------------------------
+  [params.downloads.systemRequirements]
+    title = "系统要求"
+    windows = "Windows 10 或更高版本"
+    hardware = "至少 4GB 内存，100MB 可用磁盘空间"
+
+  # ----------------------------------------------------------
+  # 关于我们页面内容
+  # ----------------------------------------------------------
+  [params.about]
+    title = "关于我们"
+    description = "了解我们的团队和技术理念"
+
+    [[params.about.sections]]
+      title = "公司简介"
+      content = "我们是一家专注于电池管理系统研发的高科技团队，拥有多年的行业经验和技术积累。致力于为客户提供安全、可靠、高性能的 BMS 解决方案。"
+
+    [[params.about.sections]]
+      title = "核心价值"
+      items = [
+        "**品质至上**：严格的质量控制体系，确保产品可靠性",
+        "**技术创新**：持续投入研发，保持技术领先",
+        "**客户导向**：以客户需求为中心，提供定制化解决方案",
+        "**专业服务**：全程技术支持，快速响应客户需求"
+      ]
+
+    [[params.about.sections]]
+      title = "联系方式"
+      items = [
+        "**商务合作**：business@example.com",
+        "**技术支持**：support@example.com",
+        "**联系电话**：+86 xxx-xxxx-xxxx",
+        "**公司地址**：中国 · 深圳"
+      ]
+
+    [[params.about.sections]]
+      title = "技术支持"
+      content = "我们提供全方位的技术支持服务：\n\n1. 产品选型指导\n2. 技术方案咨询\n3. 上位机软件使用培训\n4. 售后问题处理"
+
+# ============================================================
+# 导航菜单
+# ============================================================
 [menu]
   [[menu.main]]
     name = "首页"

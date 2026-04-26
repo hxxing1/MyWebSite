@@ -15,8 +15,10 @@
             </div>
             <div class="footer-contact">
                 <h4>联系我们</h4>
-                <p>邮箱：contact@example.com</p>
-                <p>技术支持：support@example.com</p>
+                {{ with .Site.Params.contact.email }}<p>邮箱：{{ . }}</p>{{ end }}
+                {{ with .Site.Params.contact.supportEmail }}<p>技术支持：{{ . }}</p>{{ end }}
+                {{ with .Site.Params.contact.wechat }}<p>微信：{{ . }}</p>{{ end }}
+                {{ with .Site.Params.contact.phone }}<p>电话：{{ . }}</p>{{ end }}
             </div>
         </div>
         <div class="footer-bottom">

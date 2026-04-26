@@ -670,6 +670,53 @@ h4 { font-size: 1.25rem; }
   color: var(--text-color);
 }
 
+.about-section {
+  padding: 60px 0;
+}
+
+.about-block {
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.about-block h2 {
+  margin-bottom: 15px;
+}
+
+.about-content {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.about-block ul {
+  margin-left: 20px;
+  line-height: 2;
+}
+
+.about-block ul li {
+  list-style-type: disc;
+}
+
+.system-requirements {
+  background-color: var(--bg-light);
+  padding: 30px;
+  border-radius: var(--radius);
+}
+
+.system-requirements h2 {
+  margin-bottom: 15px;
+}
+
+.system-requirements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.system-requirements ul li {
+  padding: 8px 0;
+  color: var(--text-color);
+}
+
 .site-footer {
   background-color: var(--bg-dark);
   color: white;

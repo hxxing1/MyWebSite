@@ -8,36 +8,40 @@
                 <span>{{ .Title }}</span>
             </nav>
             <h1>{{ .Title }}</h1>
-            <p class="product-description">{{ .Description }}</p>
+            <p class="product-description">{{ .Params.description }}</p>
         </div>
     </section>
 
     <section class="product-content">
         <div class="container">
             <div class="product-gallery">
-                {{ with .Params.images }}
+                {{ if .Params.images }}
                 <div class="main-image">
-                    <img src="{{ index . 0 }}" alt="{{ $.Title }}" id="main-product-image">
+                    <img src="{{ index .Params.images 0 }}" alt="{{ .Title }}" id="main-product-image">
                 </div>
-                {{ if gt (len .) 1 }}
+                {{ if gt (len .Params.images) 1 }}
                 <div class="thumbnail-list">
-                    {{ range $index, $img := . }}
+                    {{ range $index, $img := .Params.images }}
                     <button class="thumbnail{{ if eq $index 0 }} active{{ end }}" data-src="{{ $img }}">
                         <img src="{{ $img }}" alt="{{ $.Title }} - 图片 {{ add $index 1 }}">
                     </button>
                     {{ end }}
                 </div>
                 {{ end }}
+                {{ else }}
+                <div class="main-image">
+                    <img src="/images/products/default.jpg" alt="{{ .Title }}" id="main-product-image">
+                </div>
                 {{ end }}
             </div>
 
             <div class="product-info-detail">
-                {{ with .Params.specs }}
+                {{ if .Params.specs }}
                 <div class="specs-section">
                     <h2>产品规格</h2>
                     <table class="specs-table">
                         <tbody>
-                            {{ range . }}
+                            {{ range .Params.specs }}
                             <tr>
                                 <th>{{ .name }}</th>
                                 <td>{{ .value }}</td>
@@ -48,11 +52,11 @@
                 </div>
                 {{ end }}
 
-                {{ with .Params.features }}
+                {{ if .Params.features }}
                 <div class="features-section">
                     <h2>产品特点</h2>
                     <ul class="features-list">
-                        {{ range . }}
+                        {{ range .Params.features }}
                         <li>{{ . }}</li>
                         {{ end }}
                     </ul>
@@ -69,10 +73,30 @@
 
     <section class="product-description-full">
         <div class="container">
+            {{ if .Content }}
             <h2>详细介绍</h2>
             <div class="content">
                 {{ .Content }}
             </div>
+            {{ end }}
+
+            {{ if .Params.applications }}
+            <h2>应用场景</h2>
+            <ul>
+                {{ range .Params.applications }}
+                <li>{{ . }}</li>
+                {{ end }}
+            </ul>
+            {{ end }}
+
+            {{ if .Params.advantages }}
+            <h2>技术优势</h2>
+            <ol>
+                {{ range .Params.advantages }}
+                <li>{{ . | markdownify }}</li>
+                {{ end }}
+            </ol>
+            {{ end }}
         </div>
     </section>
 </article>
